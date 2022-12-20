@@ -1,0 +1,107 @@
+/* *{}는 함수설정 전역변수 */
+* {
+    box-sizing: border-box;
+}
+
+/* 선택자(selector) */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#header-search {
+    width: 1190px;
+    height: 140px;
+}
+
+div#header-center {
+    margin: auto;
+    width: 1190px;
+    height: 161px;
+}
+
+/*
+#header-search a {
+    vertical-align: auto;
+}
+
+
+/*  >로 자식을 가르킬수있다.  */
+#header-search h1 {
+    margin-top: 30px;
+    display: block;
+    width: 226px;
+    height: 53px;
+    /*vertical-align: auto;*/
+    background-position: 0px -2px;
+    /* -왼쪽 -위쪽  +오른쪽 +아래쪽 */
+    background-repeat: no-repeat;
+    /*text-indent: 100%;*/
+    /*overflow: hidden;*/
+    background-image: url(./sp_main_947f65.png);
+    /*href="https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png"*/
+    /* url(./sp_search.png) */
+    /* 나란히 배치하기위해서옆에 기본block 마진구간을 없애준다. 
+    display: inline-block; */
+}
+
+/* 위에 overflow: hidden; 대신에 네이버를 span으로감싸고 dsiplay:none;처리해줄수있다.
+보통은 overflow: hidden으로 접근성이 좋게 꼼수로 처리*/
+#header-search h1 span {
+    display: none;
+}
+
+#header-search a {
+    text-decoration: none;
+}
+
+/* html에서는 구조를 인지할수있게 써주지만 
+시각적으로는 안보이게끔 display:none;오로 처리 */
+#header-search h2 {
+    display: none;
+}
+
+#header-search fieldset {
+    width: 582px;
+    display: inline-block;
+}
+
+#header-search fieldset {
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 10px;
+    width: 586px;
+    height: 56px;
+    display: block;
+    border: 2px solid #03cf5d;
+    box-sizing: border-box;
+    /* content-box  border-box로 border랑padding이랑content를 모두합친거로 계산하기*/
+}
+
+#header-search fieldset input {
+    width: 474px;
+    height: 45px;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+/*   자손 선택은 >필요없이 그냥 띄어쓰기후 자손이름 (편리해서 주로 자손으로 서칭한다.)
+#header-center h1 {
+    width: 222px;
+}
+*/
+
+/*
+div#zerocho , div#header-center  ,로 여러개 적용가능  #header-center div태그는 생략가능
+{
+    margin: 0 auto;
+    width: 1090;
+}
+*/
