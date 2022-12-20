@@ -10,73 +10,46 @@
 
 <body>
     <header>
-
         <div id="header-center">
-            <!-- <div style="margin: 0 auto; width: 1214px;"> -->
-            <!-- 가운데 정렬용 div -->
-            <!-- 속성명: 속성값; 속성명2: 속성값2; -->
-            <!-- 인라인 스타일 (권장x) -->
-            <!-- 굳이css까지는 필요없는 간단한것들은 style로처리 -->
-            <!-- 많이 쓰는 div들은 따로 태그를 만들어줬다. 
-        <header> <main> <footer> <nav> article aside figure... 등등 -->
-
-            <div>
-                <div style="display: inline-block">네이버를 시작페이지로</div>
-                <span>쥬니버 네이버</span>
-                <!-- 인라인블록 스타일말고도 텍스트인 경우에는 span을 사용 -->
-                <!-- 블락은 전체공간을 차지 span(inline)은 지정공간만 차지 주로 텍스트
-                inline 블락은 넓이+높이까지 차지 텍스트와,이미지 등등 -->
-                <div style="display: inline-block">해피빈</div>
+            <div id="header-mini">
+                <div class="head-mini" style="display: block">네이버를 시작페이지로</div>
+                <div class="head-mini" style="display: block">쥬니버 네이버</div>
+                <div class="head-mini" style="display: block">해피빈</div>
             </div>
-
             <div id="header-search">
-
-                <div style="float:auto;">
+                <div class="head-child">
                     <a href="http://www.naver.com">
                         <h1>
                             <span>네이버</span>
-                            <!-- 주석(comment)입니다 -->
-                            <!-- 속성(attribute)입니다 -->
                         </h1>
                     </a>
                 </div>
-
-                <div style="float:auto;">
+                <div class="head-child">
                     <h2 class="blind">검색창</h2>
                     <fieldset>
                         <legend class="blind">검색</legend>
                         <input />
-                        <button>검색</button>
-                        <!--
-            <input type="checkbox"/>
-            <input type="checkbox"/>
-            <input type="radio" name="group"/>
-            <input type="radio" name="group"/>
-            <textarea></textarea>
-            -->
+                        <button><span class="blind">검색</span></button>
                     </fieldset>
                 </div>
-                <!--<div style="clear:both;"></div>-->
-
             </div>
-
         </div>
     </header>
     <nav>
-        <ul> <!-- unordered list -->
-            <li>메일</li> <!-- list item -->
-            <li>카페</li> <!-- list item -->
-            <li>블로그</li> <!-- list item -->
-            <li>지식IN</li> <!-- list item -->
-            <li>쇼핑</li> <!-- list item -->
-            <li>PAY</li> <!-- list item -->
-            <li>쇼핑LIVE</li> <!-- list item -->
+        <ul>
+            <li>메일</li>
+            <li>카페</li>
+            <li>블로그</li>
+            <li>지식IN</li>
+            <li>쇼핑</li>
+            <li>PAY</li>
+            <li>쇼핑LIVE</li>
         </ul>
     </nav>
     <div>
         <h2>실시간 검색어</h2>
         <h3>연합뉴스</h3>
-        <ol> <!-- ordered list -->
+        <ol>
             <li>충격) 나는 지금 목아파...</li>
             <li>속보) VC 종료하고 싶어</li>
             <li>중대발표: 복학 언제 될지 모르겠다</li>
