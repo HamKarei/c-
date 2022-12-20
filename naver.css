@@ -57,6 +57,35 @@ html {
     overflow: hidden;
 }
 
+.center-align {
+    margin: auto;
+    width: 1190px;
+}
+
+.nav-item {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #03c75a;
+    letter-spacing: -.3px;
+}
+
+.nav-itemb {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: -.3px;
+}
+
+.nav-more {
+    margin-left: 17px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #202020;
+    text-align: right;
+}
+
 #header-mini {
     position: relative;
     width: 1190px;
@@ -67,12 +96,6 @@ html {
     position: relative;
     width: 1190px;
     height: 140px;
-}
-
-div#header-center {
-    margin: auto;
-    width: 1190px;
-    height: 161px;
 }
 
 #header-search h1 {
@@ -132,4 +155,27 @@ div#header-center {
     position: absolute;
     right: -2px;
     top: -1px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+#nav-mail a {
+    float: right;
+}
+
+#nav-mail {
+    width: 59px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(./sp_main_3.png);
+    background-repeat: no-repeat;
+    position: absolute;
 }
